@@ -1,0 +1,13 @@
+digraph "Matrix::Create3D"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="Matrix::Create3D",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Dron::Rotate_Dron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dron.html#aab7fe386692b8cb6266d28f85dd924a0",tooltip="Metoda obrotu drona wokół właśnej osi o zadany kąt. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Dron::ChangeName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dron.html#adae397eef945fcbf6e8d17b4503606a3",tooltip="Metoda zmiany nazwy drona. "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Prism::Rotate_own_axis",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_prism.html#ab3fe089af9aa8606d968d410da1f4ed8",tooltip="Metoda obracająca bryłę wokół własnej osi o zadany kąt. "];
+}

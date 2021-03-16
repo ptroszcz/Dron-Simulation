@@ -1,0 +1,30 @@
+digraph "SceneObject.hh"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node6 [label="SceneObject.hh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Obstacle.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_obstacle_8hh.html",tooltip="Ten plik zawiera definicję klasy Obstacle. "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CuboidObstacle.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_cuboid_obstacle_8hh.html",tooltip="Ten plik zawiera definicję klasy CuboidObstacle. "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Factory.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_factory_8hh.html",tooltip="Ten plik zawiera definicję klasy Factory. "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Factory.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_factory_8cpp.html"];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="To jest główny plik programu. "];
+  Node8 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Scene.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_scene_8hh.html",tooltip="Ten plik zawiera definicję klasy Scene. "];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Obstacle.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_obstacle_8cpp.html",tooltip="Ten plik zawiera metody klasy Obstacle. "];
+  Node6 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Dron.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_dron_8hh.html",tooltip="Ten plik zawiera definicję klasy Dron. "];
+  Node14 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Dron.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_dron_8cpp.html",tooltip="Ten plik zawiera metody klasy Dron. "];
+  Node14 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

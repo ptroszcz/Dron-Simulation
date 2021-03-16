@@ -1,0 +1,20 @@
+digraph "Dron::operator[]"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node26 [label="Dron::operator[]",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node26 -> Node27 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="Dron::Center",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dron.html#a2d14a377c45473f5e06d4cf87798b7c9",tooltip="Metoda obliczająca środek drona. "];
+  Node26 -> Node28 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="Dron::IsCollision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dron.html#a649575a9df95099a8ef12d968432a6c8",tooltip="Metoda sprawdzająca czy występuje kolizja dwóch dronów. "];
+  Node28 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="SceneObject::Center",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_scene_object.html#a59ae0609f240ca4833555401ad05a94a",tooltip="Metoda wirtualna sprawdzająca środek obiektu sceny. "];
+  Node28 -> Node30 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="Vector::length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector.html#adbca5660e5a4b4e6efe0b48b0851df38",tooltip="Metoda szablonu vector<> obliczająca odległość dwóch wektorów od siebie. "];
+  Node26 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="operator\<\<",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_dron_8hh.html#afc1ef57d475033db8c8db9e534b2c72b",tooltip="Przeciążenie operatora &#39;<<&#39; dla klasy Dron. "];
+  Node31 -> Node32 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="Dron::TakeName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dron.html#ad54dbb862f34396cefb25a6493059cce",tooltip="Metoda uzyskania nazwy drona. "];
+  Node31 -> Node27 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

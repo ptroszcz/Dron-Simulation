@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fabryka Objektów: Plik źródłowy Prism.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fabryka Objektów
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_prism_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Prism.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_prism_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_prism_8hh.html">Prism.hh</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_prism.html#a2c413bcd3e2c0a4fac9c49d384e6b869">   11</a></span>&#160;<a class="code" href="class_vector.html">Vector3D</a> <a class="code" href="class_prism.html#a2c413bcd3e2c0a4fac9c49d384e6b869">Prism::operator[] </a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lnd)<span class="keyword"> const </span>{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">if</span> (lnd&gt;=0 &amp;&amp; lnd&lt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>.size())</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[lnd];</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">else</span> {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    cerr&lt;&lt;<span class="stringliteral">&quot;Przekroczono zakres indeksów klasy Prism&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[0];  }</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_prism.html#a31fdca0e8c26473da62aaa7f047013bf">   20</a></span>&#160;<a class="code" href="class_vector.html">Vector3D</a>&amp; <a class="code" href="class_prism.html#a2c413bcd3e2c0a4fac9c49d384e6b869">Prism::operator[] </a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lnd) {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   <span class="keywordflow">if</span> (lnd&gt;=0 &amp;&amp; lnd&lt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>.size())</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[lnd];</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">else</span> {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    cerr&lt;&lt;<span class="stringliteral">&quot;Przekroczono zakres indeksów klasy Prism&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    cerr&lt;&lt;<span class="stringliteral">&quot;Dokonana zmiana zastosowana dla pierwszego elementu klasy&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[0];</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  </div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_prism.html#a6c6e4aba9f9541bc0c6b7c70ce6993af">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_prism.html#a6c6e4aba9f9541bc0c6b7c70ce6993af">Prism::operator += </a>(<a class="code" href="class_vector.html">Vector3D</a> vect) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>.size();++i)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    this-&gt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[i]+=vect;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_prism.html#ab2a3bbe1c749271d7a5d5c1a8ca244a1">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_prism.html#ab2a3bbe1c749271d7a5d5c1a8ca244a1">Prism::Rotate</a> (<a class="code" href="class_matrix.html">Matrix3x3</a> matrix, <span class="keywordtype">int</span> times) {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">while</span> (times&gt;0) {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>.size();++i) </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      this-&gt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[i]=matrix*this-&gt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[i];</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    times--;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  </div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_prism.html#ab3fe089af9aa8606d968d410da1f4ed8">   45</a></span>&#160;<a class="code" href="class_vector.html">Vector3D</a> <a class="code" href="class_prism.html#ab3fe089af9aa8606d968d410da1f4ed8">Prism::Rotate_own_axis</a>(<span class="keywordtype">double</span> angle) {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="class_vector.html">Vector3D</a> help;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="class_matrix.html">Matrix3x3</a> <a class="code" href="class_prism.html#ab2a3bbe1c749271d7a5d5c1a8ca244a1">Rotate</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  help=this-&gt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[0]-this-&gt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>.size()/4];</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  help*=0.5;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  help-=this-&gt;vertice[0];</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  (*this)+=help;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  Rotate.<a class="code" href="class_matrix.html#aa57a8752a416159f5dd1cd77efd2dcbe">Create3D</a>(<span class="charliteral">&#39;z&#39;</span>,angle);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  (*this).Rotate(Rotate,1);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  help*=(-1);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  (*this)+=help;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">return</span> help;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_prism.html#afaa8bf7367ff037e978d4573ff9b2287">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_prism.html#afaa8bf7367ff037e978d4573ff9b2287">Prism::operator = </a>(<a class="code" href="class_prism.html">Prism</a> prism) {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>.size();++i)</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    this-&gt;<a class="code" href="class_prism.html#af30051ce733779c68658fac84651297e">vertice</a>[i]=prism[i];</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div><div class="ttc" id="class_prism_html_ab2a3bbe1c749271d7a5d5c1a8ca244a1"><div class="ttname"><a href="class_prism.html#ab2a3bbe1c749271d7a5d5c1a8ca244a1">Prism::Rotate</a></div><div class="ttdeci">void Rotate(Matrix3x3 matrix, int times)</div><div class="ttdoc">Metoda obrotu figury. </div><div class="ttdef"><b>Definition:</b> <a href="_prism_8cpp_source.html#l00036">Prism.cpp:36</a></div></div>
+<div class="ttc" id="class_prism_html_afaa8bf7367ff037e978d4573ff9b2287"><div class="ttname"><a href="class_prism.html#afaa8bf7367ff037e978d4573ff9b2287">Prism::operator=</a></div><div class="ttdeci">void operator=(Prism prism)</div><div class="ttdoc">Metoda przeciążenia operatora równości. </div><div class="ttdef"><b>Definition:</b> <a href="_prism_8cpp_source.html#l00059">Prism.cpp:59</a></div></div>
+<div class="ttc" id="class_prism_html_a6c6e4aba9f9541bc0c6b7c70ce6993af"><div class="ttname"><a href="class_prism.html#a6c6e4aba9f9541bc0c6b7c70ce6993af">Prism::operator+=</a></div><div class="ttdeci">void operator+=(Vector3D vect)</div><div class="ttdoc">Metoda translacji figury. </div><div class="ttdef"><b>Definition:</b> <a href="_prism_8cpp_source.html#l00031">Prism.cpp:31</a></div></div>
+<div class="ttc" id="class_prism_html"><div class="ttname"><a href="class_prism.html">Prism</a></div><div class="ttdoc">Klasa definiuje pojęcie Graniastosłupa. </div><div class="ttdef"><b>Definition:</b> <a href="_prism_8hh_source.html#l00028">Prism.hh:28</a></div></div>
+<div class="ttc" id="class_matrix_html_aa57a8752a416159f5dd1cd77efd2dcbe"><div class="ttname"><a href="class_matrix.html#aa57a8752a416159f5dd1cd77efd2dcbe">Matrix::Create3D</a></div><div class="ttdeci">void Create3D(char axis, double angle)</div><div class="ttdoc">Metoda szablonu Matrix&lt;&gt; tworząca macierz obrotu dla 3 wymiarów. </div><div class="ttdef"><b>Definition:</b> <a href="matrix_8hh_source.html#l00237">matrix.hh:237</a></div></div>
+<div class="ttc" id="_prism_8hh_html"><div class="ttname"><a href="_prism_8hh.html">Prism.hh</a></div><div class="ttdoc">Ten plik zawiera definicję klasy Prism. </div></div>
+<div class="ttc" id="class_prism_html_ab3fe089af9aa8606d968d410da1f4ed8"><div class="ttname"><a href="class_prism.html#ab3fe089af9aa8606d968d410da1f4ed8">Prism::Rotate_own_axis</a></div><div class="ttdeci">Vector3D Rotate_own_axis(double angle)</div><div class="ttdoc">Metoda obracająca bryłę wokół własnej osi o zadany kąt. </div><div class="ttdef"><b>Definition:</b> <a href="_prism_8cpp_source.html#l00045">Prism.cpp:45</a></div></div>
+<div class="ttc" id="class_matrix_html"><div class="ttname"><a href="class_matrix.html">Matrix</a></div><div class="ttdoc">Szablon definiuje pojecie macierzy kwadratowej. </div><div class="ttdef"><b>Definition:</b> <a href="matrix_8hh_source.html#l00028">matrix.hh:28</a></div></div>
+<div class="ttc" id="class_prism_html_a2c413bcd3e2c0a4fac9c49d384e6b869"><div class="ttname"><a href="class_prism.html#a2c413bcd3e2c0a4fac9c49d384e6b869">Prism::operator[]</a></div><div class="ttdeci">Vector3D operator[](unsigned int lnd) const</div><div class="ttdoc">Przeciążenie operatora odczytu &amp;#39;[]&amp;#39; dla klasy Prism. </div><div class="ttdef"><b>Definition:</b> <a href="_prism_8cpp_source.html#l00011">Prism.cpp:11</a></div></div>
+<div class="ttc" id="class_prism_html_af30051ce733779c68658fac84651297e"><div class="ttname"><a href="class_prism.html#af30051ce733779c68658fac84651297e">Prism::vertice</a></div><div class="ttdeci">std::vector&lt; Vector3D &gt; vertice</div><div class="ttdef"><b>Definition:</b> <a href="_prism_8hh_source.html#l00032">Prism.hh:32</a></div></div>
+<div class="ttc" id="class_vector_html"><div class="ttname"><a href="class_vector.html">Vector&lt; double, 3 &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_237450f2b9f932fb429ce4bc15b6e869.html">last_programm</a></li><li class="navelem"><a class="el" href="dir_02680120b9476941a8afcb630b824de8.html">src</a></li><li class="navelem"><a class="el" href="_prism_8cpp.html">Prism.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+digraph "Dron::IsCollision"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node16 [label="Dron::IsCollision",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="SceneObject::Center",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_scene_object.html#a59ae0609f240ca4833555401ad05a94a",tooltip="Metoda wirtualna sprawdzająca środek obiektu sceny. "];
+  Node16 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Vector::length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector.html#adbca5660e5a4b4e6efe0b48b0851df38",tooltip="Metoda szablonu vector<> obliczająca odległość dwóch wektorów od siebie. "];
+}

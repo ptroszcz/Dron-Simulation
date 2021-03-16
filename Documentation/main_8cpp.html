@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fabryka Objektów: Dokumentacja pliku main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fabryka Objektów
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('main_8cpp.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>To jest główny plik programu.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="vector3_d_8hh_source.html">vector3D.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="matrix3x3_8hh_source.html">matrix3x3.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gnuplot__link_8hh_source.html">gnuplot_link.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_8hh_source.html">Scene.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_prism_8hh_source.html">Prism.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_body_8hh_source.html">Body.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_rotor_8hh_source.html">Rotor.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_dron_8hh_source.html">Dron.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_cuboid_obstacle_8hh_source.html">CuboidObstacle.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_factory_8hh_source.html">Factory.hh</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#main_8cpp" alt=""/></div>
+<map name="main_8cpp" id="main_8cpp">
+</map>
+</div>
+</div>
+<p><a href="main_8cpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ac92ca5ab87034a348decad7ee8d4bd1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac92ca5ab87034a348decad7ee8d4bd1b">FPS</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:ac92ca5ab87034a348decad7ee8d4bd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a60b9dcc804925b2f9bdd1a7ab483b1d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a60b9dcc804925b2f9bdd1a7ab483b1d2">WriteToStreamExample</a> (ostream &amp;stream, <a class="el" href="class_rotor.html">Rotor</a> rotor)</td></tr>
+<tr class="separator:a60b9dcc804925b2f9bdd1a7ab483b1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3881548a8098b311cea220ef8c24ad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad3881548a8098b311cea220ef8c24ad4">WriteToStreamExample</a> (ostream &amp;stream, <a class="el" href="class_body.html">Body</a> Korp)</td></tr>
+<tr class="separator:ad3881548a8098b311cea220ef8c24ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe7d34751aa140a2e59f5c13df74107"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0fe7d34751aa140a2e59f5c13df74107">WriteToStreamExample</a> (ostream &amp;stream, <a class="el" href="class_cuboid_obstacle.html">CuboidObstacle</a> CubObst)</td></tr>
+<tr class="separator:a0fe7d34751aa140a2e59f5c13df74107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41088420eb3b71ee47b9ef942f10c6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad41088420eb3b71ee47b9ef942f10c6b">WriteToFileExample</a> (const char *filename, <a class="el" href="class_body.html">Body</a> Korp)</td></tr>
+<tr class="separator:ad41088420eb3b71ee47b9ef942f10c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a0fa1da32380d15744e6596181a959"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a73a0fa1da32380d15744e6596181a959">WriteToFileExample</a> (const char *filename, <a class="el" href="class_rotor.html">Rotor</a> rotor)</td></tr>
+<tr class="separator:a73a0fa1da32380d15744e6596181a959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501a9863f1c27151bf96bee743e2cc52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a501a9863f1c27151bf96bee743e2cc52">WriteToFileExample</a> (const char *filename, <a class="el" href="class_cuboid_obstacle.html">CuboidObstacle</a> CubObst)</td></tr>
+<tr class="separator:a501a9863f1c27151bf96bee743e2cc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d35426befdf2e416f18d621e200c92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a54d35426befdf2e416f18d621e200c92">Save_Dron_To_File</a> (<a class="el" href="class_dron.html">Dron</a> dron)</td></tr>
+<tr class="memdesc:a54d35426befdf2e416f18d621e200c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zapisu współrzędnych drona do plików.  <a href="#a54d35426befdf2e416f18d621e200c92">Więcej...</a><br /></td></tr>
+<tr class="separator:a54d35426befdf2e416f18d621e200c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ebb131d71eefa1e4bed69135488c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa8ebb131d71eefa1e4bed69135488c21">Display_Menu</a> ()</td></tr>
+<tr class="memdesc:aa8ebb131d71eefa1e4bed69135488c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetlania treści menu.  <a href="#aa8ebb131d71eefa1e4bed69135488c21">Więcej...</a><br /></td></tr>
+<tr class="separator:aa8ebb131d71eefa1e4bed69135488c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Główna funkcja programu.  <a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">Więcej...</a><br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:aae5f6f7106c190f90d6d98b2543247e3"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aae5f6f7106c190f90d6d98b2543247e3">kEdgeSize</a> = 50</td></tr>
+<tr class="separator:aae5f6f7106c190f90d6d98b2543247e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>To jest główny plik programu, zajmujący się obsługą użytkownika oraz zawierający funkcję main. </p>
+
+<p class="definition">Definicja w pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+</div><h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="ac92ca5ab87034a348decad7ee8d4bd1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92ca5ab87034a348decad7ee8d4bd1b">&#9670;&nbsp;</a></span>FPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FPS&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00020">20</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="aa8ebb131d71eefa1e4bed69135488c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ebb131d71eefa1e4bed69135488c21">&#9670;&nbsp;</a></span>Display_Menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display_Menu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja wyswietla na standardowy strumień wyjściowy treść menu, jednak nie jest odpowiedzialna za obługiwanie wyświetlanych opcji </p>
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00404">404</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_aa8ebb131d71eefa1e4bed69135488c21_icgraph.png" border="0" usemap="#main_8cpp_aa8ebb131d71eefa1e4bed69135488c21_icgraph" alt=""/></div>
+<map name="main_8cpp_aa8ebb131d71eefa1e4bed69135488c21_icgraph" id="main_8cpp_aa8ebb131d71eefa1e4bed69135488c21_icgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Główna funkcja programu definiująca figurę, na której użytkownik bedzie wykonywał operacje oraz zajmująca się odczytywaniem wprowadzanych danych przez użytkownika, interpretacją ich oraz wykonaniem wybranych przez użytkownika działań </p>
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00426">426</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
+<map name="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="a54d35426befdf2e416f18d621e200c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d35426befdf2e416f18d621e200c92">&#9670;&nbsp;</a></span>Save_Dron_To_File()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Save_Dron_To_File </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dron.html">Dron</a>&#160;</td>
+          <td class="paramname"><em>dron</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Zapisuje współrzędne drona do 5 osobnych plików. W każdym pliku jedna figura składająca się na drona. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dron</td><td>- dron, którego współrzędne mają zostać zapisane do pliku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Zwraca: - 1,gdy operacja zapisu do dowolnego z pięciu plików nie powiodła się<ul>
+<li>0, gdy operacja się w pełni powiodła </li>
+</ul>
+</dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00381">381</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a54d35426befdf2e416f18d621e200c92_cgraph.png" border="0" usemap="#main_8cpp_a54d35426befdf2e416f18d621e200c92_cgraph" alt=""/></div>
+<map name="main_8cpp_a54d35426befdf2e416f18d621e200c92_cgraph" id="main_8cpp_a54d35426befdf2e416f18d621e200c92_cgraph">
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a54d35426befdf2e416f18d621e200c92_icgraph.png" border="0" usemap="#main_8cpp_a54d35426befdf2e416f18d621e200c92_icgraph" alt=""/></div>
+<map name="main_8cpp_a54d35426befdf2e416f18d621e200c92_icgraph" id="main_8cpp_a54d35426befdf2e416f18d621e200c92_icgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad41088420eb3b71ee47b9ef942f10c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41088420eb3b71ee47b9ef942f10c6b">&#9670;&nbsp;</a></span>WriteToFileExample() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WriteToFileExample </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_body.html">Body</a>&#160;</td>
+          <td class="paramname"><em>Korp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00297">297</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ad41088420eb3b71ee47b9ef942f10c6b_cgraph.png" border="0" usemap="#main_8cpp_ad41088420eb3b71ee47b9ef942f10c6b_cgraph" alt=""/></div>
+<map name="main_8cpp_ad41088420eb3b71ee47b9ef942f10c6b_cgraph" id="main_8cpp_ad41088420eb3b71ee47b9ef942f10c6b_cgraph">
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ad41088420eb3b71ee47b9ef942f10c6b_icgraph.png" border="0" usemap="#main_8cpp_ad41088420eb3b71ee47b9ef942f10c6b_icgraph" alt=""/></div>
+<map name="main_8cpp_ad41088420eb3b71ee47b9ef942f10c6b_icgraph" id="main_8cpp_ad41088420eb3b71ee47b9ef942f10c6b_icgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73a0fa1da32380d15744e6596181a959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a0fa1da32380d15744e6596181a959">&#9670;&nbsp;</a></span>WriteToFileExample() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WriteToFileExample </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_rotor.html">Rotor</a>&#160;</td>
+          <td class="paramname"><em>rotor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przyklad zapisu wspolrzednych zbioru punktow do pliku, z ktorego dane odczyta program gnuplot i narysuje je w swoim oknie graficznym. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>- nazwa pliku, do którego zostana zapisane wspolrzędne punktów. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rotor</td><td>- wirnik klasy <a class="el" href="class_rotor.html" title="Klasa definiuje pojęcie wirnika. ">Rotor</a>, którego współrzędne mają zostać zapisane do wybranego pliku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- gdy operacja zapisu powiodła się, </td></tr>
+    <tr><td class="paramname">false</td><td>- w przypadku przeciwnym. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00324">324</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a73a0fa1da32380d15744e6596181a959_cgraph.png" border="0" usemap="#main_8cpp_a73a0fa1da32380d15744e6596181a959_cgraph" alt=""/></div>
+<map name="main_8cpp_a73a0fa1da32380d15744e6596181a959_cgraph" id="main_8cpp_a73a0fa1da32380d15744e6596181a959_cgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="a501a9863f1c27151bf96bee743e2cc52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501a9863f1c27151bf96bee743e2cc52">&#9670;&nbsp;</a></span>WriteToFileExample() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WriteToFileExample </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_cuboid_obstacle.html">CuboidObstacle</a>&#160;</td>
+          <td class="paramname"><em>CubObst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przyklad zapisu wspolrzednych zbioru punktow do pliku, z ktorego dane odczyta program gnuplot i narysuje je w swoim oknie graficznym. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>- nazwa pliku, do którego zostana zapisane wspolrzędne punktów. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">CubObst</td><td>- przeszkoda klasy <a class="el" href="class_cuboid_obstacle.html" title="Klasa definiuje pojęcie przeszkody prostopadłościennej. ">CuboidObstacle</a>, której współrzędne mają zostać zapisane do wybranego pliku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- gdy operacja zapisu powiodła się, </td></tr>
+    <tr><td class="paramname">false</td><td>- w przypadku przeciwnym. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00353">353</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a501a9863f1c27151bf96bee743e2cc52_cgraph.png" border="0" usemap="#main_8cpp_a501a9863f1c27151bf96bee743e2cc52_cgraph" alt=""/></div>
+<map name="main_8cpp_a501a9863f1c27151bf96bee743e2cc52_cgraph" id="main_8cpp_a501a9863f1c27151bf96bee743e2cc52_cgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60b9dcc804925b2f9bdd1a7ab483b1d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b9dcc804925b2f9bdd1a7ab483b1d2">&#9670;&nbsp;</a></span>WriteToStreamExample() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WriteToStreamExample </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_rotor.html">Rotor</a>&#160;</td>
+          <td class="paramname"><em>rotor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przyklad zapisu wspolrzednych zbioru punktow do strumienia wyjściowego. Dane sa odpowiednio sformatowane, tzn. przyjęto notację stałoprzecinkową z dokładnością do 10 miejsca po przecinku. Szerokość wyświetlanego pola to 16 miejsc, sposób wyrównywania - do prawej strony. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>- strumien wyjsciowy, do ktorego maja zostac zapisane kolejne wspolrzedne. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rotor</td><td>- wirnik klasy <a class="el" href="class_rotor.html" title="Klasa definiuje pojęcie wirnika. ">Rotor</a>, którego współrzędne mają zostać zapisane do wybranego strumienia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- gdy operacja zapisu powiodła się, </td></tr>
+    <tr><td class="paramname">false</td><td>- w przypadku przeciwnym. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00096">96</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a60b9dcc804925b2f9bdd1a7ab483b1d2_icgraph.png" border="0" usemap="#main_8cpp_a60b9dcc804925b2f9bdd1a7ab483b1d2_icgraph" alt=""/></div>
+<map name="main_8cpp_a60b9dcc804925b2f9bdd1a7ab483b1d2_icgraph" id="main_8cpp_a60b9dcc804925b2f9bdd1a7ab483b1d2_icgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad3881548a8098b311cea220ef8c24ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3881548a8098b311cea220ef8c24ad4">&#9670;&nbsp;</a></span>WriteToStreamExample() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WriteToStreamExample </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_body.html">Body</a>&#160;</td>
+          <td class="paramname"><em>Korp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przyklad zapisu wspolrzednych zbioru punktow do strumienia wyjściowego. Dane sa odpowiednio sformatowane, tzn. przyjęto notację stałoprzecinkową z dokładnością do 10 miejsca po przecinku. Szerokość wyświetlanego pola to 16 miejsc, sposób wyrównywania - do prawej strony. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>- strumien wyjsciowy, do ktorego maja zostac zapisane kolejne wspolrzedne. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Korp</td><td>- korpus klasy <a class="el" href="class_body.html" title="Klasa definiuje pojęcie kadłuba dla drona. ">Body</a>, którego współrzędne mają zostać zapisane do wybranego strumienia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- gdy operacja zapisu powiodła się, </td></tr>
+    <tr><td class="paramname">false</td><td>- w przypadku przeciwnym. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00132">132</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0fe7d34751aa140a2e59f5c13df74107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe7d34751aa140a2e59f5c13df74107">&#9670;&nbsp;</a></span>WriteToStreamExample() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WriteToStreamExample </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_cuboid_obstacle.html">CuboidObstacle</a>&#160;</td>
+          <td class="paramname"><em>CubObst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przyklad zapisu wspolrzednych zbioru punktow do strumienia wyjściowego. Dane sa odpowiednio sformatowane, tzn. przyjęto notację stałoprzecinkową z dokładnością do 10 miejsca po przecinku. Szerokość wyświetlanego pola to 16 miejsc, sposób wyrównywania - do prawej strony. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>- strumien wyjsciowy, do ktorego maja zostac zapisane kolejne wspolrzedne. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">CubObst</td><td>- przeszkoda klasy <a class="el" href="class_cuboid_obstacle.html" title="Klasa definiuje pojęcie przeszkody prostopadłościennej. ">CuboidObstacle</a>, której współrzędne mają zostać zapisane do wybranego strumienia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- gdy operacja zapisu powiodła się, </td></tr>
+    <tr><td class="paramname">false</td><td>- w przypadku przeciwnym. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00222">222</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja zmiennych</h2>
+<a id="aae5f6f7106c190f90d6d98b2543247e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5f6f7106c190f90d6d98b2543247e3">&#9670;&nbsp;</a></span>kEdgeSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int kEdgeSize = 50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00067">67</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_237450f2b9f932fb429ce4bc15b6e869.html">last_programm</a></li><li class="navelem"><a class="el" href="dir_02680120b9476941a8afcb630b824de8.html">src</a></li><li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

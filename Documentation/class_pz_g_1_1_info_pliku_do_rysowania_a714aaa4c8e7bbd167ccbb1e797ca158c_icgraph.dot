@@ -1,0 +1,9 @@
+digraph "PzG::InfoPlikuDoRysowania::WezNazwePliku"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7 [label="PzG::InfoPlikuDoRysowania\l::WezNazwePliku",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PzG::LaczeDoGNUPlota\l::UsunNazwePliku",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a7fa4e775e1aee74869fae174c567c2a6",tooltip="Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę. "];
+}
